@@ -4,6 +4,8 @@ AOC is an annual coding challenge that starts every December 1st and runs throug
 
 I am posting each year to its own branch to avoid having a main branch thats too busy.&nbsp; I will post code as I have time to work through the challenges.
 
+I have added templates from RealPython.com to a template folder in the main branch to enable easier reuse as branches are created.
+
 This is a small section from the [about page](https://adventofcode.com/2015/about) from 2015 (it is the same for each season).
 
 ```
