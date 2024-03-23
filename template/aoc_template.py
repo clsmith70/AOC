@@ -16,8 +16,8 @@ def part2(data: list) -> str:
 def solve(puzzle_input: str) -> list:
     """Solve the puzzle for the given input"""
     data = parse(puzzle_input=puzzle_input)
-    solution1 = part1(data)
-    solution2 = part2(data)
+    solution1 = f"Part 1: {part1(data=data)}"
+    solution2 = f"Part 2: {part2(data=data)}"
 
     return solution1, solution2
 
