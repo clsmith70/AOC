@@ -3,17 +3,17 @@
 import pathlib
 import sys
 
-def parse(puzzle_input):
+def parse(puzzle_input: str) -> list:
     """Parse text input"""
     return [line for line in puzzle_input.split()]
 
-def part1(data):
+def part1(data: list) -> str:
     """Solve part 1"""
 
-def part2(data):
+def part2(data: list) -> str:
     """Solve part 2"""
 
-def solve(puzzle_input):
+def solve(puzzle_input: str) -> list:
     """Solve the puzzle for the given input"""
     data = parse(puzzle_input=puzzle_input)
     solution1 = part1(data)
