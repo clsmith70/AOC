@@ -1,4 +1,4 @@
-# aoc_template.py
+# solution10.py
 
 import pathlib
 import sys

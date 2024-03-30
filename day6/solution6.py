@@ -1,4 +1,4 @@
-# aoc_template.py
+# soution6.py
 
 import pathlib
 import sys

@@ -1,4 +1,4 @@
-# test_aoc_template.py
+# test_solution3.py
 
 import pathlib
 import pytest
