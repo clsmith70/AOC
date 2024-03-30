@@ -18,12 +18,15 @@ def example2():
 
 def test_parse_example1(example1):
     """Test that input is parsed properly."""
+    
     assert example1 == '1'
 
 def test_part1_example1(example1):
     """Test part 1 on example input."""
+    
     assert aoc.part1(example1, 5) == 6
 
 def test_part2_example1(example1):
     """Test part 2 on example input."""
+    
     assert aoc.part2(example1, 10) == 26
