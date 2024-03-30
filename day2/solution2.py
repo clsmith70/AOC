@@ -5,20 +5,28 @@ import sys
 
 def parse(puzzle_input: str) -> list:
     """Parse text input"""
+
     return [line for line in puzzle_input.split()]
 
 def part1(data: list) -> str:
     """Solve part 1"""
+
     total_area: int = 0
 
+    # loop over each line of data
     for line in data:
+        # map the values separated by 'x' to int values
         l, w, h = list(map(int, line.split('x')))
+        # calculate the different sides
         side1 = l * w
         side2 = w * h
         side3 = h * l
 
+        # calculate the area
         area = (2 * side1) + (2 * side2) + (2 * side3)
+        # calculate the slack
         slack = min(side1, side2, side3)
+        # calculate the total area
         total_area += area + slack
     
     return total_area
