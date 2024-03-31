@@ -57,31 +57,45 @@ def run_race(contender: list, duration: int, type: str="distance") -> list:
         # track the distance
         total_distance = 0
 
+        # while there is still time to race
         while clock < duration:
+            # if the entrant is resting, clock it
             if at_rest:
                 at_rest = not at_rest
                 clock += contender[2]
+            # if the entrant is flying, clock time and distance
             else:
                 at_rest = not at_rest
                 clock += contender[1]
                 total_distance += contender[0] * contender[1]
+
+        # update the entrants total flying distance
         contender[3] = total_distance
 
     elif type == 'points':
+        # get values from the entrant data
         distance,fly_seconds,rest_seconds,_, \
             flying,flown,rested,_ = contender
+        # if the entrant is flying
         if flying:
+            # if they've flown as long as they can
+            # set them to resting and add a resting second
             if flown == fly_seconds:
                 contender[4] = False
                 contender[6] = 1
+            # otherwise, clock the second and km/s flown
             else:
                 contender[5] += 1
                 contender[3] += distance
         else:
+            # if they've rested for the required time
+            # set flying to true, add a second of flying
+            # and add the km/s distance flown
             if rested == rest_seconds:
                 contender[4] = True
                 contender[5] = 1
                 contender[3] += distance
+            # otherwise, clock another resting second
             else:
                 contender[6] += 1
 
