@@ -9,6 +9,7 @@ class StateMachine:
 
     def run(self):
         """Run the program"""
+        
         current_line = 0
         while current_line < len(self.program):
             instruction = self.program[current_line]
