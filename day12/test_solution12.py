@@ -15,8 +15,20 @@ def example1():
 
 def test_parse_example1(example1):
     """Test that input is parsed properly."""
-    assert example1 == {"e":[1,2,3],"f":{"a":2,"b":4},"g":[[[3]]],"h":{"a":{"b":4},"c":-1},"i":{"a":[-1,1]},"j":[-1,{"a":1}],"k":[],"l":{}}
+
+    assert example1 == {
+        "e":[1,2,3],
+        "f":{"a":2,"b":4},
+        "g":[[[3]]],
+        "h":{"a":{"b":4},
+        "c":-1},
+        "i":{"a":[-1,1]},
+        "j":[-1,{"a":1}],
+        "k":[],
+        "l":{}
+        }
 
 def test_part1_example1(example1):
     """Test part 1 on example input."""
+
     assert aoc.part1(example1) == 18
