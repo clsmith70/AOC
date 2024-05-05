@@ -126,6 +126,7 @@ def part2(data):
 
 def solve(puzzle_input):
     """Solve the puzzle for the given input"""
+    
     data = parse(puzzle_input=puzzle_input)
     solution1 = f"Part 1: {part1(data=data)}"
     solution2 = f"Part 2: {part2(data=data)}"
