@@ -9,11 +9,11 @@ def parse(puzzle_input: str):
 
 def part1(data: list):
     """Solve part 1"""
-    return data
+    return None
 
 def part2(data: list):
     """Solve part 2"""
-    return data
+    return None
 
 def solve(puzzle_input: str):
     """Solve the puzzle for the given input"""
