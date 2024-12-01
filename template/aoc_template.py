@@ -10,9 +10,11 @@ def parse(puzzle_input: str) -> list:
 
 def part1(data: list) -> str:
     """Solve part 1"""
+    return ""
 
 def part2(data: list) -> str:
     """Solve part 2"""
+    return ""
 
 def solve(puzzle_input: str) -> list:
     """Solve the puzzle for the given input"""
@@ -26,6 +28,6 @@ def solve(puzzle_input: str) -> list:
 if __name__ == "__main__":
     for path in sys.argv[1:]:
         print(f"{path}:")
-        puzzle_input = pathlib.Path(path).read_text().strip()
-        solutions = solve(puzzle_input=puzzle_input)
+        puzzle_data = pathlib.Path(path).read_text().strip()
+        solutions = solve(puzzle_input=puzzle_data)
         print("\n".join(str(solution) for solution in solutions))
