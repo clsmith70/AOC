@@ -26,6 +26,6 @@ def solve(puzzle_input: str):
 if __name__ == "__main__":
     for path in sys.argv[1:]:
         print(f"{path}:")
-        puzzle_data = pathlib.Path(path).read_text(encoding='utf-8').strip()
-        solutions = solve(puzzle_input=puzzle_data)
+        raw_data = pathlib.Path(path).read_text(encoding='utf-8').strip()
+        solutions = solve(puzzle_input=raw_data)
         print("\n".join(str(solution) for solution in solutions))
