@@ -3,8 +3,6 @@
 import pathlib
 import sys
 
-import numpy as np
-
 def parse(puzzle_input: str, convert: bool = False):
     """Parse text input"""
     convert_value = 10_000_000_000_000
