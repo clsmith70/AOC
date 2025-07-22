@@ -6,6 +6,8 @@ I am posting each year to its own branch to avoid having a main branch thats too
 
 I have added templates from RealPython.com to a template folder in the main branch to enable easier reuse as branches are created.&nbsp; A requirements file has been added to facilitate easier setup in virtual environments.
 
+UPDATE: For 2017, I've decided to remove the templates and go with a topdown approach and just build what I need.
+
 This is a small section from the [about page](https://adventofcode.com/2015/about) from 2015 (it is the same for each season).
 
 ```
